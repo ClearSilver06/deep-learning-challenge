@@ -1,0 +1,28 @@
+ALPHABET SOUP REPORT
+
+OVERVIEW
+The purpose of this analysis is to look at several charities and determine whether or not 
+they are successful. 
+
+The dataframe this analysis uses contains information based on: Application Type, Classification, Use Case,
+Organization type, Status, Income, Special Considerations, Ask Amount, and whether or not
+they are successful.
+
+The analysis will utilize tensorflow as well as a deep neural network and keras model. 
+
+RESULTS
+
+* The 'y' targeted variable is the column "IS_SUCCESSFUL". 
+* The remaining columns were 'X'
+
+Aside from the "EIN" and "NAME" columns, no other columns were dropped from the dataframe.
+
+The model originally used two hidden layers each with 8 nodes and 100 epochs. The accuracy 
+of those models were slightly lacking, around 74%. I made a few alterations and reduced the 
+nodes, choosing 2 nodes per hiddne layer. The accuracy remain around the previous attempt.
+I altered the number of epochs to 30 from the original 100 and it was this attempt that the
+accuracy of the model increased to 78% which is a bit better than the previous others.
+
+With just slight changes to the number of epochs and nodes the accuracy jumped. I believe
+there is potential to raise the model's accuracy more if certain superfluous column datas 
+were excluded from the training model. 
